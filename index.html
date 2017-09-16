@@ -34,7 +34,7 @@
         <div class="col-lg-8">
          <nav class="navigation" role="navigation">
         <ul class="primary-nav">
-          <li><a href="#">Spotify Pre-save</a></li>
+          <!-- <li><a href="#">Spotify Pre-save</a></li> -->
           <li><a href="welcome.html">Continue to Website</a></li>
         </ul>
       </nav>
@@ -53,7 +53,7 @@
       <div class="banner-text text-center">
         <h1>REST ASSURED</h1>
         <p style="color: #fff">New Single from Broken Stems</p>
-         <a href="#" class="btn btn-large">Spotify Pre-Save</a> 
+         <button id="presave" href="#" class="btn btn-large">Spotify Pre-Save</button> 
       <!--   <nav role="navigation"> <a href="#services" class="banner-btn"><img src="images/down-arrow.png" alt=""></a></nav> -->
       </div>
       <!-- banner text --> 
@@ -72,5 +72,8 @@
 <script src="js/retina.min.js"></script> 
 <script src="js/modernizr.js"></script> 
 <script src="js/main.js"></script>
+<script type="text/javascript">
+  var a=new XMLHttpRequest;a.open("GET","https://www.fanpresave.com/api/login/277eace0-9a94-11e7-b0a9-5b8c9193bfbe",!0),a.onload=function(){a.status>=200&&a.status<400&&document.getElementById("presave").addEventListener("click",function(){window.open(a.responseText,"presave","menubar=1,resizable=1,width=512,height=768")})},a.onerror=function(){},a.send();
+</script>
 </body>
 </html>

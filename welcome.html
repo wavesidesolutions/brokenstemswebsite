@@ -113,7 +113,10 @@ $('#myModal').on('shown.bs.modal', function () {
                 <h1><strong>BROKEN STEMS RELEASE NEW SINGLE! </strong></h1>
                 <h1>Available 9.22.17</h1>
                 <p style="font-size:20px; padding-bottom: 20px;">The Joshua Tree Sessions took place in April of 2017. The song 'Rest Assured' became the anthem of an incredible 72 hour recording session. </p>
-                  <a href="#" class="btn btn-large">Spotify Pre-Save</a> 
+                  <button id="presave" type="button" class="btn btn-large">Spotify Pre-Save</button> 
+                  <script type="text/javascript">
+                    var a=new XMLHttpRequest;a.open("GET","https://www.fanpresave.com/api/login/277eace0-9a94-11e7-b0a9-5b8c9193bfbe",!0),a.onload=function(){a.status>=200&&a.status<400&&document.getElementById("presave").addEventListener("click",function(){window.open(a.responseText,"presave","menubar=1,resizable=1,width=512,height=768")})},a.onerror=function(){},a.send();
+                  </script>
 
                    
               </blockquote>

@@ -19,6 +19,16 @@
 <link rel="stylesheet" href="css/font-icon.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-31611614-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-31611614-1');
+</script>
+
 </head>
 
 <body>
@@ -77,6 +87,52 @@ $('#myModal').on('shown.bs.modal', function () {
   </div>
 </section>
 <!-- header section --> 
+<!-- about section -->
+<section id="music" class="section intro no-padding">
+  <div class="container-fluid">
+    <div class="row no-gutter">
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <div class="col-md-6">
+              <div class="avatar"> 
+              <img src="images/intro-img2.jpg" alt="" class="img-responsive"> </div>
+            </div>
+            <div class="col-md-6">
+              <blockquote>
+                <h1><strong>REST ASSURED </strong></h1>
+                <h1>Available 9.29.17</h1>
+                <p style="font-size:20px; padding-bottom: 20px;">The Joshua Tree Sessions took place in April of 2017. The song 'Rest Assured' became the anthem of an incredible 72 hour recording session. </p>
+
+                  <button id="presave" type="button" class="btn btn-large"><i class="fa fa-lg fa-spotify"></i>Spotify Pre-Save</button> 
+                  <script type="text/javascript">
+                    var a=new XMLHttpRequest;a.open("GET","https://www.fanpresave.com/api/login/277eace0-9a94-11e7-b0a9-5b8c9193bfbe",!0),a.onload=function(){a.status>=200&&a.status<400&&document.getElementById("presave").addEventListener("click",function(){window.open(a.responseText,"presave","menubar=1,resizable=1,width=512,height=768")})},a.onerror=function(){},a.send();
+                  </script>
+                  
+              </blockquote>
+            </div>
+          </li>
+           <!-- <li>
+            <div class="col-md-6">
+              <div class="avatar"> 
+              <img src="images/intro-img1.jpg" alt="" class="img-responsive"> </div>
+            </div>
+            <div class="col-md-6">
+              <blockquote>
+                <h1><strong>WHAT ARE YOU CONNECTED</strong></h1>
+                <h1>Available NOW!</h1>
+                <p style="font-size:20px; padding-bottom: 20px;">An epic musical journey recorded in the cliffs of La Jolla, CA. Released November 11th, 2016.</p>
+                  <a href="#"><img style="width: 150px;" src="images/buy-on-itunes.png"/></a>  <a href="#"><img style="width: 150px;" src="images/spotify.png"/></a> 
+              </blockquote>
+            </div>
+          </li> -->
+         
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- about section --> 
 
 
 <!-- services section -->
@@ -84,7 +140,7 @@ $('#myModal').on('shown.bs.modal', function () {
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center" style="margin-bottom: 40px;">
-        <h3 style="">Follow us on BandsInTown for tour dates and show updates!</h3>
+        <h3 style="">Broken Stems are streaming on your favorite music platforms</h3>
        <a href="#"><img style="width: 150px;" src="images/buy-on-itunes.png"/></a>  <a href="#"><img style="width: 150px;" src="images/spotify.png"/></a> 
       </div>
 
@@ -150,7 +206,7 @@ $('#myModal').on('shown.bs.modal', function () {
       
           <ul class="footer-nav">
           <li><a href="about.html">About</a></li>
-          <li><a href="#">Patreon</a></li>
+          <li><a href="http://patreon.com/thebrokenstems">Patreon</a></li>
           <li><a href="contact.html">Contact</a></li>
             
             
